@@ -8,8 +8,8 @@ app.use(
   serveStatic({
     root: "static",
     precompressed: true,
-    onFound: (localPath, context) => {
-      const { res } = context;
+    onFound: (_path, c) => {
+      const { res } = c;
     },
   })
 );
