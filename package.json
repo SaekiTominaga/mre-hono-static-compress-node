@@ -1,0 +1,14 @@
+{
+  "name": "mre-hono-static-compress-node",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev1": "node app1.js",
+    "dev2": "node app2.js",
+    "test": "node --env-file=.env.test --experimental-test-coverage --test *.test.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.8",
+    "hono": "^4.7.0"
+  }
+}
