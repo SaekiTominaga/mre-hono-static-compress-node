@@ -16,8 +16,8 @@ await test("not called `c.res`", async (t) => {
     );
   });
 
-  await t.test("width compressed", async () => {
-    const response = await app.request("width-compressed.html", {
+  await t.test("with compressed", async () => {
+    const response = await app.request("with-compressed.html", {
       headers: {
         "Accept-Encoding": "br",
       },
